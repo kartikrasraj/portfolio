@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Rasraj Portfolio Website</title>
+
+    <!-- box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <!-- <i class='bx bx-menu' id="menu-icon"></i>-->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Kartik Rasraj</h1>
+
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aspernatur asperiores officiis quia recusandae dolorum?</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/kartik-rasraj-8a8369244/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/kartikrasraj"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            </a>
+            <a href="#about"><img src="images/home.png" alt="Home Image" width="400" height="400"></a>
+        </div>
+    </section>
+
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about2.jpg" width="600px" height="600px" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading"> About <span>Me</span></h2>
+            <h3>Full Stack Developer</h3>
+            <p>I am a 4th-year BTech student in Computer Science and Engineering. I have strong skills in C++ and Java, with a solid understanding of data structures, algorithms, and object oriented programming concepts. My technical training in Java and
+                DSA at college, combined with my experience as a full-stack web developer, has equipped me with programming and problem solving and practical skills in building and deploying web applications. I have also completed a 6-month internship
+                and training in full-stack development, where I gained hands-on experience in creating robust and scalable solutions.
+
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+    </section>
+
+    <!--services section design-->
+    <section class="services" id="services">
+        <h2 class="heading"> Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>
+
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ut aspernatur repellendus nulla necessitatibus, illo tempora earum facere illum qui.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxl-java'></i>
+                <h3>Java Development</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ut aspernatur repellendus nulla necessitatibus, illo tempora earum facere illum qui.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-aws'></i>
+                <h3>Cloud Services</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ut aspernatur repellendus nulla necessitatibus, illo tempora earum facere illum qui.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--portfolio section design-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Upcoming <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, praesentium. Reiciendis cum culpa deserunt in.
+
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, praesentium. Reiciendis cum culpa deserunt in.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" height="235" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, praesentium. Reiciendis cum culpa deserunt in.
+
+                    </p>
+                </div>
+            </div>
+
+    </section>
+    <!--contact section-->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="https://getform.io/f/bxojzkda" autocomplete="off" method="POST">
+            <div class="input-box">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="phone_number" placeholder="Phone Number" pattern="[0-9]{10}" title="Mobile number" required>
+                <input type="text" name="subject" placeholder="Subject of contact" required>
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!--footer design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p> Copyright &copy; 2024 </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-chevrons-up' ></i></a>
+        </div>
+    </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!--typed js-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
+    <!--custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
