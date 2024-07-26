@@ -41,9 +41,22 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 //typed js
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Backend Developer', 'Blogger'],
+    strings: ['Frontend Developer', 'Backend Developer', 'Java Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backdelay: 1000,
     loop: true
 });
+
+function redirectToHomePage() {
+    // URL of the home page (adjust if needed)
+    const homePageURL = 'index.html';
+
+    // Check if the page is loaded or refreshed
+    if (performance.navigation.type === 1) {
+        window.location.href = homePageURL;
+    }
+}
+
+// Execute function on page load
+window.onload = redirectToHomePage;
