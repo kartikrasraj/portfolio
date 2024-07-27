@@ -15,6 +15,7 @@
     --second-bg-color: #1f242d;
     --text-color: #fff;
     --main-color: rgb(9, 163, 191);
+    --background-image: url('images/bgtech.jpg');
 }
 
 html {
@@ -23,6 +24,7 @@ html {
 }
 
 body {
+    background: var(--bg-color) var(--background-image) no-repeat center center fixed;
     background: var(--bg-color);
     color: var(--text-color);
 }
@@ -401,13 +403,54 @@ span {
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: wrap;
+    align-items: center;
     padding: 2rem 9%;
     background: #2b3035;
+    position: relative;
+    padding-right: 10rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left,
+.footer-address {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left i,
+.footer-address i {
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+
+.footer-left p,
+.footer-address p {
+    font-size: 1.6rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .footer-text p {
     font-size: 1.6rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.footer-iconTop {
+    position: absolute;
+    right: 10rem;
 }
 
 .footer-iconTop a {
@@ -426,7 +469,7 @@ span {
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--second-bg-color)
+    color: var(--second-bg-color);
 }
 
 
@@ -631,5 +674,98 @@ span {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+
+/* Media query for tablets (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 3%;
+    }
+    .footer-text {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .footer-iconTop {
+        position: static;
+        margin-top: 2rem;
+        right: 0;
+        /* Ensure it stays to the right */
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .footer-left,
+    .footer-address {
+        width: 100%;
+        justify-content: center;
+    }
+    .footer-left p,
+    .footer-address p {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Media query for small tablets and large phones (max-width: 617px) */
+
+@media (max-width: 617px) {
+    .footer-left i,
+    .footer-address i {
+        font-size: 2rem;
+    }
+    .footer-left p,
+    .footer-address p {
+        font-size: 1.2rem;
+    }
+    .footer-text p {
+        font-size: 1.4rem;
+    }
+    .footer-iconTop a i {
+        font-size: 2rem;
+    }
+}
+
+
+/* Media query for phones (max-width: 450px) */
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .footer {
+        padding: 2rem 1.5rem;
+    }
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Media query for very small phones (max-width: 365px) */
+
+@media (max-width: 365px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .footer-left,
+    .footer-address {
+        justify-content: center;
+    }
+    .footer-iconTop {
+        position: static;
+        margin-top: 1rem;
+        align-self: flex-end;
+        /* Keep it on the right */
     }
 }
